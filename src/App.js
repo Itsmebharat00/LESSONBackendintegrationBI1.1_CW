@@ -1,10 +1,12 @@
 import "./styles.css";
+import Movies from "./components/Movies.jsx";
+import MovieByTitle from "./components/MoviesByTitle.jsx";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Movies />
+      <MovieByTitle title="Gully Boy" />
     </div>
   );
 }
