@@ -1,7 +1,9 @@
-import useFetch from "../useFetch.jsx";
+import useFetch from "../useFetch";
 
-const MovieByTitle = ({ title }) => {
-  const { data, loading, error } = useFetch(`http://localhost:3000/${title}`);
+const MoviesByTitle = ({ title }) => {
+  const { data, loading, error } = useFetch(
+    `https://lessonbe-4-4-cw-getdatafrommongo-db.vercel.app/movies/${title}`
+  );
 
   console.log(data);
 
@@ -22,4 +24,4 @@ const MovieByTitle = ({ title }) => {
   );
 };
 
-export default MovieByTitle;
+export default MoviesByTitle;
