@@ -1,7 +1,9 @@
-import useFetch from "../useFetch.jsx";
+import useFetch from "../useFetch";
 
 const Movies = () => {
-  const { data, loading, error } = useFetch("http://localhost:3000/movies");
+  const { data, loading, error } = useFetch(
+    "https://lessonbe-4-4-cw-getdatafrommongo-db.vercel.app/movies"
+  );
 
   console.log(data);
 

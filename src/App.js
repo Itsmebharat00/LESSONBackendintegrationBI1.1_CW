@@ -1,10 +1,10 @@
 import "./styles.css";
-import Movies from "./components/Movies.jsx";
-import MovieByTitle from "./components/MoviesByTitle.jsx";
+import Movies from "./components/Movies";
+import MovieByTitle from "./components/MoviesByTitle";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="">
       <Movies />
       <MovieByTitle title="Gully Boy" />
     </div>
